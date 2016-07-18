@@ -34,20 +34,17 @@ public class SearchResult {
 
         this.PageCount = pageCount;
     }
-/*
-    public static SearchResult Empty {
-            var emptyResult = new SearchResult
-            {
-                Campaigns = new List<Campaign>(),
-                        Page = 1,
-                        PageSize = 0,
-                        PageCount = 0,
-                        RecordCount = 0,
-                        Success = true
-            };
 
-            return emptyResult;
+    public static SearchResult getEmpty() {
+        SearchResult emptyResult = new SearchResult();
+        emptyResult.Page = 1;
+        emptyResult.PageSize = 0;
+        emptyResult.PageCount = 0;
+        emptyResult.RecordCount = 0;
+        emptyResult.Success = true;
+        emptyResult.Campaigns = new ArrayList<Campaign>();
 
+        return emptyResult;
     }
-*/
+
 }

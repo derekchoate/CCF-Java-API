@@ -9,6 +9,6 @@ import CCF.API.Common.SearchOptions;
  */
 public interface IClient {
 
-    SearchResult Search(Criteria criteria, SearchOptions options);
+    SearchResult Search(Criteria criteria, SearchOptions options) throws Exception;
 
 }

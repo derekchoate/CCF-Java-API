@@ -22,13 +22,9 @@ public class Campaign {
     public String Url;
     public String Category;
     public CampaignStyleEnum Style;
-/*
-    public String StyleName { get
-        {
-            return Style.ToString();
-        }
+    public String getStyleName(){
+        return Style.toString();
     }
-*/
     public String RecurringPeriod;
     public enum CampaignStyleEnum {
         MustHitGoalWithDeadline,
